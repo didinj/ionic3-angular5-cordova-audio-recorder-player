@@ -33,7 +33,7 @@ export class HomePage {
 
   startRecord() {
     if (this.platform.is('ios')) {
-      this.fileName = 'record'+new Date().getDate()+new Date().getMonth()+new Date().getFullYear()+new Date().getHours()+new Date().getMinutes()+new Date().getSeconds()+'.3gp';
+      this.fileName = 'record'+new Date().getDate()+new Date().getMonth()+new Date().getFullYear()+new Date().getHours()+new Date().getMinutes()+new Date().getSeconds()+'.m4a';
       this.filePath = this.file.documentsDirectory.replace(/file:\/\//g, '') + this.fileName;
       this.audio = this.media.create(this.filePath);
     } else if (this.platform.is('android')) {
